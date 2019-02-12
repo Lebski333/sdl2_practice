@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mlebek/projekcik/src/main.cpp
+SDL2/SDL.h
+/home/mlebek/projekcik/src/SDL2/SDL.h
+memory
+-
+iostream
+-
+
