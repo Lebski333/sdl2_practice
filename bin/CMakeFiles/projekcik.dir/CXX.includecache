@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/mlebek/projekcik/src/main.cpp
+../inc/Program.h
+memory
+-
 SDL2/SDL.h
-/home/mlebek/projekcik/src/SDL2/SDL.h
+../inc/SDL2/SDL.h
+iostream
+-
+inttypes.h
+-
+
+/home/mlebek/dev/sdl2_practice/src/main.cpp
+SDL2/SDL.h
+/home/mlebek/dev/sdl2_practice/src/SDL2/SDL.h
 memory
 -
 iostream
 -
+Program.h
+/home/mlebek/dev/sdl2_practice/src/Program.h
 

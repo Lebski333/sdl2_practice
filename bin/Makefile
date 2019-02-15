@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mlebek/projekcik
+CMAKE_SOURCE_DIR = /home/mlebek/dev/sdl2_practice
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mlebek/projekcik/bin
+CMAKE_BINARY_DIR = /home/mlebek/dev/sdl2_practice/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mlebek/projekcik/bin/CMakeFiles /home/mlebek/projekcik/bin/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mlebek/dev/sdl2_practice/bin/CMakeFiles /home/mlebek/dev/sdl2_practice/bin/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mlebek/projekcik/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mlebek/dev/sdl2_practice/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ projekcik/fast:
 	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/build
 .PHONY : projekcik/fast
 
+src/Program.o: src/Program.cpp.o
+
+.PHONY : src/Program.o
+
+# target to build an object file
+src/Program.cpp.o:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Program.cpp.o
+.PHONY : src/Program.cpp.o
+
+src/Program.i: src/Program.cpp.i
+
+.PHONY : src/Program.i
+
+# target to preprocess a source file
+src/Program.cpp.i:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Program.cpp.i
+.PHONY : src/Program.cpp.i
+
+src/Program.s: src/Program.cpp.s
+
+.PHONY : src/Program.s
+
+# target to generate assembly for a file
+src/Program.cpp.s:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Program.cpp.s
+.PHONY : src/Program.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -150,6 +177,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/pointers.o: src/pointers.cpp.o
+
+.PHONY : src/pointers.o
+
+# target to build an object file
+src/pointers.cpp.o:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/pointers.cpp.o
+.PHONY : src/pointers.cpp.o
+
+src/pointers.i: src/pointers.cpp.i
+
+.PHONY : src/pointers.i
+
+# target to preprocess a source file
+src/pointers.cpp.i:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/pointers.cpp.i
+.PHONY : src/pointers.cpp.i
+
+src/pointers.s: src/pointers.cpp.s
+
+.PHONY : src/pointers.s
+
+# target to generate assembly for a file
+src/pointers.cpp.s:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/pointers.cpp.s
+.PHONY : src/pointers.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... projekcik"
 	@echo "... edit_cache"
+	@echo "... src/Program.o"
+	@echo "... src/Program.i"
+	@echo "... src/Program.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/pointers.o"
+	@echo "... src/pointers.i"
+	@echo "... src/pointers.s"
 .PHONY : help
 
 
