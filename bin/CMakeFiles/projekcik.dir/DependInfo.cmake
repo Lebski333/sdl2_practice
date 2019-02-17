@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mlebek/dev/sdl2_practice/src/Program.cpp" "/home/mlebek/dev/sdl2_practice/bin/CMakeFiles/projekcik.dir/src/Program.cpp.o"
+  "/home/mlebek/dev/sdl2_practice/src/Application.cpp" "/home/mlebek/dev/sdl2_practice/bin/CMakeFiles/projekcik.dir/src/Application.cpp.o"
   "/home/mlebek/dev/sdl2_practice/src/main.cpp" "/home/mlebek/dev/sdl2_practice/bin/CMakeFiles/projekcik.dir/src/main.cpp.o"
   "/home/mlebek/dev/sdl2_practice/src/pointers.cpp" "/home/mlebek/dev/sdl2_practice/bin/CMakeFiles/projekcik.dir/src/pointers.cpp.o"
   )

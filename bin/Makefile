@@ -123,32 +123,32 @@ projekcik/fast:
 	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/build
 .PHONY : projekcik/fast
 
-src/Program.o: src/Program.cpp.o
+src/Application.o: src/Application.cpp.o
 
-.PHONY : src/Program.o
+.PHONY : src/Application.o
 
 # target to build an object file
-src/Program.cpp.o:
-	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Program.cpp.o
-.PHONY : src/Program.cpp.o
+src/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Application.cpp.o
+.PHONY : src/Application.cpp.o
 
-src/Program.i: src/Program.cpp.i
+src/Application.i: src/Application.cpp.i
 
-.PHONY : src/Program.i
+.PHONY : src/Application.i
 
 # target to preprocess a source file
-src/Program.cpp.i:
-	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Program.cpp.i
-.PHONY : src/Program.cpp.i
+src/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Application.cpp.i
+.PHONY : src/Application.cpp.i
 
-src/Program.s: src/Program.cpp.s
+src/Application.s: src/Application.cpp.s
 
-.PHONY : src/Program.s
+.PHONY : src/Application.s
 
 # target to generate assembly for a file
-src/Program.cpp.s:
-	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Program.cpp.s
-.PHONY : src/Program.cpp.s
+src/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/projekcik.dir/build.make CMakeFiles/projekcik.dir/src/Application.cpp.s
+.PHONY : src/Application.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -213,9 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... projekcik"
 	@echo "... edit_cache"
-	@echo "... src/Program.o"
-	@echo "... src/Program.i"
-	@echo "... src/Program.s"
+	@echo "... src/Application.o"
+	@echo "... src/Application.i"
+	@echo "... src/Application.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

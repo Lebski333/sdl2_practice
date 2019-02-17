@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/projekcik.dir/src/Program.cpp.o"
+  "CMakeFiles/projekcik.dir/src/Application.cpp.o"
   "CMakeFiles/projekcik.dir/src/main.cpp.o"
   "CMakeFiles/projekcik.dir/src/pointers.cpp.o"
   "projekcik.pdb"

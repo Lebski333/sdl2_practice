@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/projekcik.dir/src/Program.cpp.o CMakeFiles/projekcik.dir/src/main.cpp.o CMakeFiles/projekcik.dir/src/pointers.cpp.o  -o projekcik -lSDL2 
+/usr/bin/c++     CMakeFiles/projekcik.dir/src/Application.cpp.o CMakeFiles/projekcik.dir/src/main.cpp.o CMakeFiles/projekcik.dir/src/pointers.cpp.o  -o projekcik -lSDL2 

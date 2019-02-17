@@ -57,18 +57,18 @@ include CMakeFiles/projekcik.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/projekcik.dir/flags.make
 
-CMakeFiles/projekcik.dir/src/Program.cpp.o: CMakeFiles/projekcik.dir/flags.make
-CMakeFiles/projekcik.dir/src/Program.cpp.o: ../src/Program.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mlebek/dev/sdl2_practice/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekcik.dir/src/Program.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekcik.dir/src/Program.cpp.o -c /home/mlebek/dev/sdl2_practice/src/Program.cpp
+CMakeFiles/projekcik.dir/src/Application.cpp.o: CMakeFiles/projekcik.dir/flags.make
+CMakeFiles/projekcik.dir/src/Application.cpp.o: ../src/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mlebek/dev/sdl2_practice/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projekcik.dir/src/Application.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/projekcik.dir/src/Application.cpp.o -c /home/mlebek/dev/sdl2_practice/src/Application.cpp
 
-CMakeFiles/projekcik.dir/src/Program.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekcik.dir/src/Program.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mlebek/dev/sdl2_practice/src/Program.cpp > CMakeFiles/projekcik.dir/src/Program.cpp.i
+CMakeFiles/projekcik.dir/src/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/projekcik.dir/src/Application.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mlebek/dev/sdl2_practice/src/Application.cpp > CMakeFiles/projekcik.dir/src/Application.cpp.i
 
-CMakeFiles/projekcik.dir/src/Program.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekcik.dir/src/Program.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mlebek/dev/sdl2_practice/src/Program.cpp -o CMakeFiles/projekcik.dir/src/Program.cpp.s
+CMakeFiles/projekcik.dir/src/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/projekcik.dir/src/Application.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mlebek/dev/sdl2_practice/src/Application.cpp -o CMakeFiles/projekcik.dir/src/Application.cpp.s
 
 CMakeFiles/projekcik.dir/src/main.cpp.o: CMakeFiles/projekcik.dir/flags.make
 CMakeFiles/projekcik.dir/src/main.cpp.o: ../src/main.cpp
@@ -98,14 +98,14 @@ CMakeFiles/projekcik.dir/src/pointers.cpp.s: cmake_force
 
 # Object files for target projekcik
 projekcik_OBJECTS = \
-"CMakeFiles/projekcik.dir/src/Program.cpp.o" \
+"CMakeFiles/projekcik.dir/src/Application.cpp.o" \
 "CMakeFiles/projekcik.dir/src/main.cpp.o" \
 "CMakeFiles/projekcik.dir/src/pointers.cpp.o"
 
 # External object files for target projekcik
 projekcik_EXTERNAL_OBJECTS =
 
-projekcik: CMakeFiles/projekcik.dir/src/Program.cpp.o
+projekcik: CMakeFiles/projekcik.dir/src/Application.cpp.o
 projekcik: CMakeFiles/projekcik.dir/src/main.cpp.o
 projekcik: CMakeFiles/projekcik.dir/src/pointers.cpp.o
 projekcik: CMakeFiles/projekcik.dir/build.make

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../inc/Program.h
+../inc/Application.h
 memory
 -
 SDL2/SDL.h
@@ -16,13 +16,7 @@ iostream
 inttypes.h
 -
 
-/home/mlebek/dev/sdl2_practice/src/main.cpp
-SDL2/SDL.h
-/home/mlebek/dev/sdl2_practice/src/SDL2/SDL.h
-memory
--
-iostream
--
-Program.h
-/home/mlebek/dev/sdl2_practice/src/Program.h
+/home/mlebek/dev/sdl2_practice/src/Application.cpp
+Application.h
+/home/mlebek/dev/sdl2_practice/src/Application.h
 
