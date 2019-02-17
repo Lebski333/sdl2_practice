@@ -1,26 +1,27 @@
 #include "SDL2/SDL.h"
 #include <memory>
 #include <iostream>
-#include "Program.h"
+#include "Application.h"
 
 // struct ProgramDestroyer
 // {
-//     void operator()(Program *p)
+//     void operator()(Application *p)
 //     {
 //         SDL_Quit();
-//         std::cout << "Program shut down." << '\n';
+//         std::cout << "Application shut down." << '\n';
 //     }
 // };
-// using Program_ptr = std::unique_ptr<Program, ProgramDestroyer>;
+// using Program_ptr = std::unique_ptr<Application, ProgramDestroyer>;
 
 int main()
 {
-    Program program;
+    Application program;
 
+    program.loop();
     // program.update();
-    program.loadSurfaceFromFile("../image.bmp");
-    program.updateSurface();
+    // program.loadSurfaceFromFile("../image.bmp");
+    // program.updateSurface();
 
-    SDL_Delay(3000);
+    
     return 0;
 }

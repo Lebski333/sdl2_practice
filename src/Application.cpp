@@ -1,6 +1,6 @@
-#include "Program.h"
+#include "Application.h"
 
-Program::Program() /*:  window{SDL_CreateWindow("siema",
+Application::Application() /*:  window{SDL_CreateWindow("siema",
                                              SDL_WINDOWPOS_UNDEFINED,
                                              SDL_WINDOWPOS_UNDEFINED,
                                              SCREEN_WIDTH,
@@ -34,30 +34,54 @@ Program::Program() /*:  window{SDL_CreateWindow("siema",
             {
                 std::cout << "Coudnl't get surface from window. SDL Error: " << SDL_GetError() << '\n';
             }
+            else
+            {
+                event = new SDL_Event();
+                running = true;
+            }
         }
     }
 }
 
-Program::~Program()
+Application::~Application()
 {
-    // SDL_FreeSurface(screenSurface.get());
-    // SDL_DestroyWindow(window.get());
     SDL_Quit();
-    std::cout << "Program shut down." << '\n';
+    std::cout << "Application shut down." << '\n';
 }
 
-void Program::clean()
+void Application::loop()
+{
+    while (running)
+    {
+        while (SDL_PollEvent(event))
+        {
+            update();
+
+            if (event->type == SDL_EventType::SDL_QUIT)
+            {
+                running = false;
+            }
+        }
+    }
+}
+
+void Application::clean()
 {
 }
 
-void Program::update()
+void Application::update()
 {
-    SDL_FillRect(screenSurface, nullptr, SDL_MapRGB(screenSurface->format, 0xff, 0xff, 0xff));
-    SDL_UpdateWindowSurface(window.get());
-    SDL_Delay(3000);
+    if (loadedSurface == nullptr)
+    {
+        loadSurfaceFromFile("../image.bmp");
+        updateSurface();
+    }
+    // SDL_FillRect(screenSurface, nullptr, SDL_MapRGB(screenSurface->format, 0xff, 0xff, 0xff));
+    // SDL_UpdateWindowSurface(window.get());
+    // SDL_Delay(3000);
 }
 
-bool Program::loadSurfaceFromFile(const char *path/* , SDL_Surface *sur */)
+bool Application::loadSurfaceFromFile(const char *path /* , SDL_Surface *sur */)
 {
     loadedSurface.reset(SDL_LoadBMP(path));
     if (loadedSurface == nullptr)
@@ -68,15 +92,14 @@ bool Program::loadSurfaceFromFile(const char *path/* , SDL_Surface *sur */)
     else
     {
         {
-            SDL_BlitSurface(loadedSurface.get(), nullptr, screenSurface,  nullptr);
+            SDL_BlitSurface(loadedSurface.get(), nullptr, screenSurface, nullptr);
             return 0;
         }
     }
-    
 }
 
-void Program::updateSurface()
+void Application::updateSurface()
 {
-    
+
     SDL_UpdateWindowSurface(window.get());
 }
